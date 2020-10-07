@@ -48,17 +48,6 @@ export default class Home extends Component {
 
     async componentDidMount() {
         await this.refs.client.connect(this.state.user == 'user0' ? token0 : token1);
-
-        // reject() {
-            // this.refs.stringeeCall.reject(this.state.callId, (status, code, message) => {
-            //     console.log(message, status, code);
-            //     if (status) {
-            //         // Sucess
-            //     } else {
-            //         // Fail
-            //     }
-            // });
-        // }
     }
 
     // The client connects to Stringee server
